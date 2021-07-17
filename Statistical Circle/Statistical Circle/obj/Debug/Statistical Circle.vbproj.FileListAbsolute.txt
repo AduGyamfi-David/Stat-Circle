@@ -1,0 +1,24 @@
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbprojResolveAssemblyReference.cache
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical_Circle.Form1.resources
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical_Circle.Resources.resources
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbproj.GenerateResource.cache
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbproj.CoreCompileInputs.cache
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.exe.config
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.exe
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.pdb
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.xml
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.exe
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.xml
+C:\Users\David A\source\repos\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.pdb
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.exe.config
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.exe
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.pdb
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\bin\Debug\Statistical Circle.xml
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbproj.AssemblyReference.cache
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical_Circle.Form1.resources
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical_Circle.Resources.resources
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbproj.GenerateResource.cache
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.vbproj.CoreCompileInputs.cache
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.exe
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.xml
+C:\Users\dadug\Documents\David\David\TRANSFER\Programming\Add to Github\Statistical Circle\Statistical Circle\obj\Debug\Statistical Circle.pdb
