@@ -8,44 +8,49 @@
 
         Randomize()
 
-        For j = 1 To 100
+        Dim Points() As Panel = Form2.getHits()
 
-            For i = 0 To 9
-
-                ReDim PanelArray((j * Base) - 1)
-
-                Hits(Base * j)
-
-                CalcProb(i)
-
-            Next
-
-            'MsgBox(Results(0, 0) & ", " & Results(0, 1) & ", " & Results(0, 2) & vbNewLine &
-            '       Results(1, 0) & ", " & Results(1, 1) & ", " & Results(1, 2) & vbNewLine &
-            '       Results(2, 0) & ", " & Results(2, 1) & ", " & Results(2, 2) & vbNewLine &
-            '       Results(3, 0) & ", " & Results(3, 1) & ", " & Results(3, 2) & vbNewLine &
-            '       Results(4, 0) & ", " & Results(4, 1) & ", " & Results(4, 2) & vbNewLine &
-            '       Results(5, 0) & ", " & Results(5, 1) & ", " & Results(5, 2) & vbNewLine &
-            '       Results(6, 0) & ", " & Results(6, 1) & ", " & Results(6, 2) & vbNewLine &
-            '       Results(7, 0) & ", " & Results(7, 1) & ", " & Results(7, 2) & vbNewLine &
-            '       Results(8, 0) & ", " & Results(8, 1) & ", " & Results(8, 2) & vbNewLine &
-            '       Results(9, 0) & ", " & Results(9, 1) & ", " & Results(9, 2))
-
-            For i = 0 To 9
-
-                Avg(0) += Results(i, 0)
-                Avg(1) += Results(i, 1)
-                Avg(2) += Results(i, 2)
-
-            Next
-
-            Avg(0) = Avg(0) / 10
-            Avg(1) = Avg(1) / 10
-            Avg(2) = Avg(2) / 10
-
-            Points(j - 1) = Avg(0)
-
+        For i = 0 To Points.Length
+            Dim p As Point = Points(i).Location
         Next
+        'For j = 1 To 100
+
+        '    For i = 0 To 9
+
+        '        ReDim PanelArray((j * Base) - 1)
+
+        '        Hits(Base * j)
+
+        '        CalcProb(i)
+
+        '    Next
+
+        'MsgBox(Results(0, 0) & ", " & Results(0, 1) & ", " & Results(0, 2) & vbNewLine &
+        '       Results(1, 0) & ", " & Results(1, 1) & ", " & Results(1, 2) & vbNewLine &
+        '       Results(2, 0) & ", " & Results(2, 1) & ", " & Results(2, 2) & vbNewLine &
+        '       Results(3, 0) & ", " & Results(3, 1) & ", " & Results(3, 2) & vbNewLine &
+        '       Results(4, 0) & ", " & Results(4, 1) & ", " & Results(4, 2) & vbNewLine &
+        '       Results(5, 0) & ", " & Results(5, 1) & ", " & Results(5, 2) & vbNewLine &
+        '       Results(6, 0) & ", " & Results(6, 1) & ", " & Results(6, 2) & vbNewLine &
+        '       Results(7, 0) & ", " & Results(7, 1) & ", " & Results(7, 2) & vbNewLine &
+        '       Results(8, 0) & ", " & Results(8, 1) & ", " & Results(8, 2) & vbNewLine &
+        '       Results(9, 0) & ", " & Results(9, 1) & ", " & Results(9, 2))
+
+        'For i = 0 To 9
+
+        '        Avg(0) += Results(i, 0)
+        '        Avg(1) += Results(i, 1)
+        '        Avg(2) += Results(i, 2)
+
+        '    Next
+
+        '    Avg(0) = Avg(0) / 10
+        '    Avg(1) = Avg(1) / 10
+        '    Avg(2) = Avg(2) / 10
+
+        '    Points(j - 1) = Avg(0)
+
+        'Next
 
         'MsgBox(Points(0) & vbNewLine & Points(1) & vbNewLine & Points(2) & vbNewLine & Points(3) & vbNewLine & Points(4) & vbNewLine &
         '       Points(5) & vbNewLine & Points(6) & vbNewLine & Points(7) & vbNewLine & Points(8) & vbNewLine & Points(9) & vbNewLine &
@@ -58,7 +63,7 @@
         '       Points(40) & vbNewLine & Points(41) & vbNewLine & Points(42) & vbNewLine & Points(43) & vbNewLine & Points(44) & vbNewLine &
         '       Points(45) & vbNewLine & Points(46) & vbNewLine & Points(47) & vbNewLine & Points(48) & vbNewLine & Points(49))
 
-        Plot()
+        'Plot()
 
         'LoBF()
 
