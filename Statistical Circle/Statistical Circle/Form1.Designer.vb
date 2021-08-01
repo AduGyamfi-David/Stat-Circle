@@ -26,11 +26,14 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1384, 661)
+        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.ClientSize = New System.Drawing.Size(1482, 853)
+        Me.Location = New System.Drawing.Point(1000, -800)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 

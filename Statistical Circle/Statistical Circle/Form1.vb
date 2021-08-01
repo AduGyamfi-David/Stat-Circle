@@ -4,15 +4,55 @@
     Dim Avg(2) As Single
     Dim Points(99) As Single
     Dim Base As Short = 50
+
+    Dim WithEvents GraphPanel As New Panel With {
+            .BackColor = Color.White
+    }
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Randomize()
+        'Randomize()
 
-        Dim Points() As Panel = Form2.getHits()
+        Dim Circle(Form2.NUMBER_OF_POINTS) As Point
+        Console.WriteLine(Points.Length)
 
-        For i = 0 To Points.Length
-            Dim p As Point = Points(i).Location
+        'For i = 0 To Points.Length
+        '    Dim p As Point = Points(i).Location
+        'Next
+
+        GraphPanel.Parent = Me
+        GraphPanel.Location = New Point(Me.Width - 1000, 0)
+        GraphPanel.Width = 1000
+        GraphPanel.Height = 620
+        GraphPanel.SendToBack()
+
+        Dim Answer As New Label With {
+            .Parent = GraphPanel,
+            .Location = New Point(300, 300),
+            .Width = 100,
+            .Height = 50,
+            .AutoSize = True,
+            .Font = New Font("Sans Serif", 31, FontStyle.Bold)
+        }
+
+        'Dim g As Graphics = GraphPanel.CreateGraphics()
+
+        Dim CircleCount As Short = 0
+
+        For i = 0 To Form2.NUMBER_OF_POINTS - 1
+            Dim NormalizedPoint As New Point(Form2.Hits(i).Location.X - Form2.WIDTH_BOUND, Form2.Hits(i).Location.Y - Form2.HEIGHT_BOUND)
+
+            Console.WriteLine(NormalizedPoint.X.ToString() + " " + NormalizedPoint.Y.ToString())
+
+            If (Math.Sqrt(NormalizedPoint.X ^ 2 + NormalizedPoint.Y ^ 2) < 200) Then
+                Circle(CircleCount) = NormalizedPoint
+                CircleCount += 1
+            End If
+
+            Answer.Text = 4 * (CircleCount / Form2.NUMBER_OF_POINTS)
         Next
+
+        'g.DrawLine(New Pen(Color.Black, 5), New Point(550, 0), New Point(550, Me.Height))
+
         'For j = 1 To 100
 
         '    For i = 0 To 9
@@ -68,16 +108,21 @@
         'LoBF()
 
     End Sub
-    Private Sub MyPaint(s As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles MyBase.Paint
+    'Private Sub MyPaint(s As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles MyBase.Paint
 
-        DrawAxes(e)
+    '    DrawAxes(e)
 
-        'e.Graphics.DrawEllipse(Pens.Black, New Rectangle(125, 125, 400, 400))
+    '    'e.Graphics.DrawEllipse(Pens.Black, New Rectangle(125, 125, 400, 400))
 
+    'End Sub
+
+    Private Sub DrawingAxes(s As Object, e As PaintEventArgs) Handles GraphPanel.Paint
+        e.Graphics.DrawLine(Pens.Black, New Point(20, 0), New Point(20, Me.Height))
+        e.Graphics.DrawLine(Pens.Black, New Point(0, GraphPanel.Height - 20), New Point(Me.Width, GraphPanel.Height - 20))
     End Sub
-    Private Sub DrawAxes(e As PaintEventArgs)
-        e.Graphics.DrawLine(Pens.Black, New Point(10, 0), New Point(10, 650))
-        e.Graphics.DrawLine(Pens.Black, New Point(0, 640), New Point(13604, 640))
+
+    Private Sub AddAxisNumbers()
+
     End Sub
     Private Sub Hits(N As Integer)
         For i = 0 To N - 1
@@ -133,7 +178,7 @@
 
     End Sub
 End Class
-'panels are of from their actual location be a factor = the panels with / 2, and it height / 2
+'panels are of from their actual location be a factor = the panels width / 2, and its height / 2
 'algorithm for line of best fit, and display details
 'to do this algorithm, need to find mean height of points, then pick that as middle
 'then considering this, find residuals from each point, and plot a line through all these points
